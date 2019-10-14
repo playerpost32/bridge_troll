@@ -88,6 +88,7 @@ if ENV['FORCE_POSTGRES']
 end
 
 group :test do
+  gem 'apparition'
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'codecov', require: false
@@ -95,7 +96,6 @@ group :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'launchy'
-  gem 'selenium-webdriver', require: false
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'webmock'
